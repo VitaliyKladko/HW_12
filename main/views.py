@@ -1,3 +1,6 @@
+import logging
+from json import JSONDecodeError
+
 from flask import Blueprint, render_template, request
 from functions import get_posts_by_word, load_posts
 
@@ -19,7 +22,14 @@ def search_page():
     """
     # в переменную кладется слово для поиска по средствам request.args.get по ключу 's'
     search_query = request.args.get('s', '')
-    # в переменную posts передается список словарей постов
-
-    posts = get_posts_by_word(search_query)
-    return render_template('post_list.html', query=search_query, posts=posts)
+    logging.info('Выполняю поиск')
+    try:
+        # в переменную posts передается список словарей постов
+        posts = get_posts_by_word(search_query)
+    except FileNotFoundError:
+        logging.error('Файл не найден')
+        return 'Json файл не найден'
+    except JSONDecodeError:
+        return 'Невалидный файл'
+    else:
+        return render_template('post_list.html', query=search_query, posts=posts)

@@ -1,0 +1,59 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:49:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:49:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:49:31] "GET /search/?s=красиво HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:49:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:49:32] "GET /post/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:49:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:49:43] "POST /post/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:49:46] "GET /post/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:49:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:49:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:49:51] "GET /search/?s=Виталик HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:49:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:49:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:49:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:52:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:52:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:52:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняю поиск
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:53:00] "GET /search/?s=красиво HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:53:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:53:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:53:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:55:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:55:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняю поиск
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:55:39] "GET /search/?s=красиво HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:55:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:55:40] "GET /post/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:55:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Загруженный файл не картинка
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:55:44] "POST /post/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:55:48] "GET /post/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:55:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:55:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:57:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:57:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняю поиск
+ERROR:root:Файл не найден
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:57:50] "GET /search/?s= HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Выполняю поиск
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:58:02] "GET /search/?s=красиво HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:58:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:58:05] "GET /post/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 22:58:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

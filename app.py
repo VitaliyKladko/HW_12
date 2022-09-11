@@ -1,5 +1,5 @@
-from flask import Flask, request, render_template, send_from_directory
-
+import logging
+from flask import Flask
 from loader.views import loader_blueprint
 from main.views import main_blueprint
 
@@ -13,11 +13,7 @@ app.register_blueprint(main_blueprint)
 # регистрируем второй блюпринт с добавлением постов
 app.register_blueprint(loader_blueprint)
 
-
-@app.route("/uploads/<path:path>")
-def static_dir(path):
-    return send_from_directory("uploads", path)
-
+# добавляем логирование для проекта
+logging.basicConfig(filename='basic.log', level=logging.INFO)
 
 app.run()
-

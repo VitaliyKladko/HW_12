@@ -1,3 +1,5 @@
+import logging
+
 from flask import Blueprint, render_template, request
 
 from functions import add_post
@@ -28,8 +30,15 @@ def add_post_page():
     if not picture or not content:
         return 'Нет картинки или текста'
 
-    # picture_path хранит в себе путь до сохраненной картинки (плюс функция сохранила картинку  uploads)
-    picture_path: str = '/' + save_picture(picture)
+    if picture.filename.split('.')[-1] not in ['jpeg', 'png']:
+        logging.info('Загруженный файл не картинка')
+        return 'Неверный тип файла'
+    try:
+        # picture_path хранит в себе путь до сохраненной картинки (плюс функция сохранила картинку  uploads)
+        picture_path: str = '/' + save_picture(picture)
+    except FileNotFoundError:
+        logging.error('Файл не найден')
+        return 'Файл не найден'
 
     # post хранит в себе dict 'pic' - ссылка на путь картинки, 'content' - тот контент, который мы
     # получили из формы с помощью: request.form.get('content')
